@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper"/>
+</section>

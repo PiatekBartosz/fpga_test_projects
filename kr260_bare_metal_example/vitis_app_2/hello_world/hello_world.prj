@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hello_world" location="/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world" platform="/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/add_bram_wrapper.xpfm" platformUID="xilinx:k26c_som240_1_connector_kr260_carrier_som240_1_connector_som240_2_connector_kr260_carrier_som240_2_connector::0.0(custom)" systemProject="hello_world_system" sysConfig="add_bram_wrapper" runtime="cpp" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="7571b4daec6ea4d8c5c155c642754df4">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.824893071">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1021370678" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

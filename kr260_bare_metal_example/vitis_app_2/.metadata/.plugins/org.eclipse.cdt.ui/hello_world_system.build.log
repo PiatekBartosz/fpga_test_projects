@@ -1,0 +1,10 @@
+20:19:17 **** Build of configuration Debug for project hello_world_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/add_bram_wrapper.xpfm -domains standalone_psu_cortexa53_0 -bifpath /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/add_bram_wrapper.xpfm --sys_config add_bram_wrapper --bif /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world_system/Debug/system.bif --bitstream /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world/_ide/bitstream/add_bram_wrapper.bit --elf /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world/Debug/hello_world.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world/_ide/bitstream/add_bram_wrapper.bit
+Running /opt/Xilinx/Vitis/2023.2/bin/bootgen -arch zynqmp -image /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/hello_world_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+20:19:23 Build Finished (took 5s.427ms)
+

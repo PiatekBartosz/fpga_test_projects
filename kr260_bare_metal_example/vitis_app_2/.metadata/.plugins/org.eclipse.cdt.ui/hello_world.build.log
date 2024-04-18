@@ -1,0 +1,26 @@
+20:19:16 **** Build of configuration Debug for project hello_world ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/sw/add_bram_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/sw/add_bram_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: hello_world.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/add_bram_wrapper/export/add_bram_wrapper/sw/add_bram_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "hello_world.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hello_world.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87460	   4696	  20804	 112960	  1b940	hello_world.elf
+Finished building: hello_world.elf.size
+ 
+
+20:19:17 Build Finished (took 421ms)
+

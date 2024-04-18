@@ -1,0 +1,27 @@
+verilog xil_defaultlib --include "/opt/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/ec67/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/2fcd/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/f0b6/hdl/verilog" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/35de/hdl/verilog" \
+"../../../bd/add_bram/ip/add_bram_zynq_ultra_ps_e_0_0/sim/add_bram_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_0/sim/bd_85c6_one_0.v" \
+
+sv xil_defaultlib --include "/opt/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/ec67/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/2fcd/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/f0b6/hdl/verilog" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/35de/hdl/verilog" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_2/sim/bd_85c6_s00mmu_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_3/sim/bd_85c6_s00tr_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_4/sim/bd_85c6_s00sic_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_5/sim/bd_85c6_s00a2s_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_6/sim/bd_85c6_sarn_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_7/sim/bd_85c6_srn_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_8/sim/bd_85c6_sawn_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_9/sim/bd_85c6_swn_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_10/sim/bd_85c6_sbn_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_11/sim/bd_85c6_m00s2a_0.sv" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/ip/ip_12/sim/bd_85c6_m00e_0.sv" \
+
+verilog xil_defaultlib --include "/opt/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/ec67/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/2fcd/hdl" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/f0b6/hdl/verilog" --include "../../../../kr260_bare_metal_example.gen/sources_1/bd/add_bram/ipshared/35de/hdl/verilog" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/bd_0/sim/bd_85c6.v" \
+"../../../bd/add_bram/ip/add_bram_axi_smc_0/sim/add_bram_axi_smc_0.v" \
+"../../../bd/add_bram/ip/add_bram_axi_bram_ctrl_0_bram_0/sim/add_bram_axi_bram_ctrl_0_bram_0.v" \
+"../../../bd/add_bram/sim/add_bram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

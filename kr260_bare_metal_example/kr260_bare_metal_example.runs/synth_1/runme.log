@@ -1,0 +1,257 @@
+
+*** Running vivado
+    with args -log add_bram_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source add_bram_wrapper.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source add_bram_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top add_bram_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28207
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2639.992 ; gain = 284.777 ; free physical = 4621 ; free virtual = 21583
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'add_bram_wrapper' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/hdl/add_bram_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'add_bram' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:13]
+INFO: [Synth 8-6157] synthesizing module 'add_bram_axi_bram_ctrl_0_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_axi_bram_ctrl_0_0' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add_bram_axi_bram_ctrl_0_bram_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_axi_bram_ctrl_0_bram_0' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'add_bram_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:139]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'add_bram_axi_bram_ctrl_0_bram_0' has 8 connections declared, but only 7 given [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:139]
+INFO: [Synth 8-6157] synthesizing module 'add_bram_axi_smc_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_axi_smc_0' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'add_bram_axi_smc_0' is unconnected for instance 'axi_smc' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:147]
+WARNING: [Synth 8-7071] port 'M00_AXI_awuser' of module 'add_bram_axi_smc_0' is unconnected for instance 'axi_smc' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:147]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'add_bram_axi_smc_0' is unconnected for instance 'axi_smc' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:147]
+WARNING: [Synth 8-7071] port 'M00_AXI_aruser' of module 'add_bram_axi_smc_0' is unconnected for instance 'axi_smc' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:147]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'add_bram_axi_smc_0' has 76 connections declared, but only 72 given [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:147]
+INFO: [Synth 8-6157] synthesizing module 'add_bram_rst_ps8_0_99M_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_rst_ps8_0_99M_0' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'add_bram_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:220]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'add_bram_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:220]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'add_bram_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:220]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'add_bram_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:220]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'add_bram_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:220]
+INFO: [Synth 8-6157] synthesizing module 'add_bram_zynq_ultra_ps_e_0_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_zynq_ultra_ps_e_0_0' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/.Xil/Vivado-28181-pop-os/realtime/add_bram_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'emio_enet0_enet_tsu_timer_cnt' of module 'add_bram_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:227]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'add_bram_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:227]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'add_bram_zynq_ultra_ps_e_0_0' has 45 connections declared, but only 43 given [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/synth/add_bram.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'add_bram_wrapper' (0#1) [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/hdl/add_bram_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2719.961 ; gain = 364.746 ; free physical = 4525 ; free virtual = 21489
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2725.898 ; gain = 370.684 ; free physical = 4523 ; free virtual = 21487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2725.898 ; gain = 370.684 ; free physical = 4523 ; free virtual = 21487
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2725.898 ; gain = 0.000 ; free physical = 4523 ; free virtual = 21487
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_zynq_ultra_ps_e_0_0/add_bram_zynq_ultra_ps_e_0_0/add_bram_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'add_bram_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_zynq_ultra_ps_e_0_0/add_bram_zynq_ultra_ps_e_0_0/add_bram_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'add_bram_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_bram_ctrl_0_0/add_bram_axi_bram_ctrl_0_0/add_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'add_bram_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_bram_ctrl_0_0/add_bram_axi_bram_ctrl_0_0/add_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'add_bram_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_smc_0/add_bram_axi_smc_0/add_bram_axi_smc_0_in_context.xdc] for cell 'add_bram_i/axi_smc'
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_smc_0/add_bram_axi_smc_0/add_bram_axi_smc_0_in_context.xdc] for cell 'add_bram_i/axi_smc'
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_rst_ps8_0_99M_0/add_bram_rst_ps8_0_99M_0/add_bram_rst_ps8_0_99M_0_in_context.xdc] for cell 'add_bram_i/rst_ps8_0_99M'
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_rst_ps8_0_99M_0/add_bram_rst_ps8_0_99M_0/add_bram_rst_ps8_0_99M_0_in_context.xdc] for cell 'add_bram_i/rst_ps8_0_99M'
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_bram_ctrl_0_bram_0/add_bram_axi_bram_ctrl_0_bram_0/add_bram_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'add_bram_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.gen/sources_1/bd/add_bram/ip/add_bram_axi_bram_ctrl_0_bram_0/add_bram_axi_bram_ctrl_0_bram_0/add_bram_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'add_bram_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.562 ; gain = 0.000 ; free physical = 4522 ; free virtual = 21486
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.598 ; gain = 0.000 ; free physical = 4522 ; free virtual = 21486
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'add_bram_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2797.598 ; gain = 442.383 ; free physical = 4520 ; free virtual = 21481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2797.598 ; gain = 442.383 ; free physical = 4520 ; free virtual = 21481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for add_bram_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2797.598 ; gain = 442.383 ; free physical = 4520 ; free virtual = 21481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2797.598 ; gain = 442.383 ; free physical = 4520 ; free virtual = 21482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2797.598 ; gain = 442.383 ; free physical = 4519 ; free virtual = 21485
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3278.070 ; gain = 922.855 ; free physical = 4094 ; free virtual = 21060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3278.070 ; gain = 922.855 ; free physical = 4094 ; free virtual = 21060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3288.086 ; gain = 932.871 ; free physical = 4080 ; free virtual = 21046
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |add_bram_axi_bram_ctrl_0_0      |         1|
+|2     |add_bram_axi_bram_ctrl_0_bram_0 |         1|
+|3     |add_bram_axi_smc_0              |         1|
+|4     |add_bram_rst_ps8_0_99M_0        |         1|
+|5     |add_bram_zynq_ultra_ps_e_0_0    |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |add_bram_axi_bram_ctrl_0      |     1|
+|2     |add_bram_axi_bram_ctrl_0_bram |     1|
+|3     |add_bram_axi_smc              |     1|
+|4     |add_bram_rst_ps8_0_99M        |     1|
+|5     |add_bram_zynq_ultra_ps_e_0    |     1|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.961 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3302.961 ; gain = 876.047 ; free physical = 4074 ; free virtual = 21043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3302.969 ; gain = 947.746 ; free physical = 4074 ; free virtual = 21043
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3302.969 ; gain = 0.000 ; free physical = 4074 ; free virtual = 21043
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3338.648 ; gain = 0.000 ; free physical = 4337 ; free virtual = 21306
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9795f39d
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 3353.621 ; gain = 1937.578 ; free physical = 4329 ; free virtual = 21298
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2697.484; main = 2697.484; forked = 405.724
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3792.270; main = 3353.590; forked = 1026.719
+INFO: [Common 17-1381] The checkpoint '/home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.runs/synth_1/add_bram_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file add_bram_wrapper_utilization_synth.rpt -pb add_bram_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 12:34:21 2024...

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Apr 13 14:10:10 2024
+# Process ID: 102356
+# Current directory: /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2
+# Command line: vivado
+# Log file: /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/vivado.log
+# Journal file: /home/bartek/Programming/kr260_bare_metal_example/vitis_app_2/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 4109.720 MHz, CPU Physical cores: 12, Host memory: 14497 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/bartek/Programming/kr260_bare_metal_example/kr260_bare_metal_example.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
